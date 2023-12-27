@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name    = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Flights</title>
+     <!-- bootstrap link -->
+     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin = "anonymous">
+
+     <!-- awesome font link -->
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAV-bAR -->
+ 
+<div class = " navbar row justify-content-evenly">
+  <div class = "col-lg-6">
+  <div class = "d-flex flex-column">
+  <h1  class = "text-white fw-bolder "> &#9992; FLY-HIGH</h1>
+  <div class = "d-flex align-items center pt-3">
+  <div class = "btn btn-dark fw-bold text-white">Flights</div>
+  <div class = "btn btn-primary fw-bold mx-1">Hotels</div>
+  <div class = "btn btn-primary fw-bold ">Car hire</div>
+ 
+         </div>
+      </div>
+ </div>
+                    <div class = "col-lg-5">
+                     <div class = "d-flex align-items center">
+                     <p class="text-primary m-0 ">Help</p> 
+                     <input type="text" placeholder="English(US)" class="bg-gray rounded-3 border-0 mx-2  w-50 py-2">
+                     <div class = "btn btn-gray text-primary fw-bold rounded-3">Login</div>
+         </div>
+         </div>
+     </div>
+  </div>
+
+  <!-- flight begin -->
+
+<div class="flightImg d-none d-md-flex d-xl-flex flex-column">
+<h2 class="text-black fw-bolder " style="font-size:28px; padding: 7% 0 2% 7%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Choose your Destination,Pick your Dates -Let us be your Travel Companion.</h2>
+<div class="container-fluid" style="padding-bottom:22% ;">
+   <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8 bg-blue p-4 rounded-2">
+        <div class="d-flex flex-column">
+ <!-- radio button -->
+ <div class="d-flex align-items-centre text-white fw-bold">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Round-Trip
+        </label>
+      </div>
+      <hr>
+      <div class="form-check mx-4">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+         Oneway
+        </label>
+      </div>
+      <hr>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+        Multi-City
+        </label>
+      </div>
+ </div>
+
+<!-- input field -->
+<div class="d-flex align-items-center py-2">
+<!-- from -->
+<div>
+  <label for="exampleDataList" class="form-label mb-0 text-white  fw-bold">From</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Country ,City or Airport">
+<datalist id="datalistOptions">
+  <option value="Canada">
+  <option value="New Delhi">
+  <option value="Seattle">
+  <option value="Los Angeles">
+  <option value="Chicago">
+</datalist>
+</div>
+
+
+<div>
+  <label for="exampleDataList" class="form-label mb-0 text-white fs-8 fw-bold">To</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Country ,City or Airport">
+<datalist id="datalistOptions">
+  <option value="America">
+  <option value="Canada">
+  <option value="Mumbai">
+  <option value="Banglore">
+  <option value="Kolkata">
+</datalist>
+</div>
+
+<!-- departure -->
+<div>
+<label for="" class="for-label mb-0 text-white  fw-bold">Departure</label>
+<input type="date" class="form-control">
+</div>
+<!-- return -->
+<div>
+  <label for="" class="for-label mb-0 text-white fw-bold">Return</label>
+<input type="date" class="form-control">
+</div>
+<!-- cabinclass -->
+<div>
+  <label for="" class="for-label mb-0 text-white fs-8 fw-bold">Cabin Crew</label>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>1 Adult ,Economy</option>
+    <option value="1">Premium Economy</option>
+    <option value="2">Buisness Economy</option>
+    <option value="3">First Classs</option>
+  </select>
+</div>
+
+
+
+</div>
+
+<!-- check button -->
+<div class="d-flex align-items-centre justify-content-between pt-2">
+<div class="d-flex flex-column">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label fs-8 text-white fw-bold" for="flexCheckDefault">
+     Add Nearby Airport
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label fs-8 text-white fw-bold" for="flexCheckChecked">
+     Non-stop Flight only
+    </label>
+  </div>
+</div>
+<div class="btn btn-green fs-5 fw-bold">Search Flights &#8594</div>
+</div>
+
+</div>
+</div>
+    <div class="col-lg-2"></div>
+   </div>
+</div>
+</div>
+<!-- sm -->
+
+<!-- hotels -->
+<div class="container" style="margin-top: 5%;margin-bottom: 5%;">
+<h3 class="text-decoration-underline font-monospace bg-blue text-white text-center">Plan your next vaccation!</h3>
+</div>
+
+<div class="container-fluid d-none d-md-flex d-xl-flex flex-column">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 d-flex">
+      <div class="card border-0 mx-2" style="width: 18rem;">
+        <img src="California.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+      <div class="card-subtitle mb-2 fw-bold">California</div>
+
+          <h5 class="card-title">Tuli Imperial Hotel</h5>
+          <p class="card-text text-dark">Rs. 4000
+           <span class="fs-8">Per Night</span>
+          </p>
+          <a href="#" class="btn btn-check"> Let's Go</a>
+        </div>
+      </div>
+
+            <div class="card border-0 mx-2" style="width: 18rem;">
+              <img src="bang.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+            <div class="card-subtitle mb-2 fw-bold">Bangkok</div>
+      
+                <h5 class="card-title">Le'Meridian Hotel</h5>
+                <p class="card-text text-dark">Rs. 4500
+                 <span class="fs-8">Per Night</span>
+                </p>
+                <a href="#" class="btn btn-check"> Let's Go</a>
+              </div>
+            </div>
+
+
+            <div class="card border-0 mx-2" style="width: 18rem;">
+                    <img src="france.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <div class="card-subtitle mb-2 fw-bold">France</div>
+            
+                      <h5 class="card-title">Palm View Hotel</h5>
+                      <p class="card-text text-dark">Rs. 5000
+                       <span class="fs-8">Per Night</span>
+                      </p>
+                      <a href="#" class="btn btn-check"> Let's Go</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card border-0 mx-2" style="width: 18rem;">
+                    <img src="bangkok.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <div class="card-subtitle mb-2 fw-bold">Portugal</div>
+            
+                      <h5 class="card-title">LakeView Hotel</h5>
+                      <p class="card-text text-dark">Rs. 6000
+                       <span class="fs-8">Per Night</span>
+                      </p>
+                      <a href="#" class="btn btn-check"> Let's Go</a>
+                    </div>
+                  </div>
+                
+
+
+
+
+
+
+
+
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<!-- footer -->
+
+  <div class="footer row p-3">
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <h4 class="text-green pb-2">Contact Us</h4>
+   <p class="text-white">Email:FlighHigh@gmail.com</p>
+   <p class="text-white">PhoneNo: +121 8920 </p>
+   <p class="text-white"> Address: Pt-145,Street Town</p>
+   </div>
+
+   <div class="col-lg-3 col-md-6 col-sm-6">
+    <h4 class="text-green pb-2">Get Help</h4>
+   <p> <a href="" class="text-white">About</a></p>
+   <p> <a href="" class="text-white">Customer Support</a></p>
+   <p> <a href=""  class="text-white">Terms of Services</a></p>
+   <p> <a href="" class="text-white">Facebook Page</a></p>
+   </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <h4 class="text-green pb-2">Travel Essentials</h4>
+     <p class="text-white">PNR Status</p>
+     <p class="text-white">Airline Routes</p>
+     <p class="text-white">Train Running Status</p>
+     </div>
+   
+   
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.navbar{
+    background-color: rgb(27, 22, 63);font-weight: 700;font-family: serif;font-size: larger;font-style: italic;
+}
+.btn-blue{
+    background: color #021220 ;
+}
+.bg-gray{
+    background-color: #dddde5;
+}
+.bg-blue{
+    background-color: #02122c;
+}
+.btn-gray{
+    background-color: #dddde5;
+}
+.fs-8{
+    font-size: 12px;
+}
+.flightImg{
+    background-image: url(fl.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+
+}
+.btn-green{
+    background-color:#00a698 ;
+
+}
+.bg-sm-blue{
+    background-color: #042759;
+}
+.footer-content.p{
+    text-emphasis-color: white;
+}
+.text-green{
+    color: #10c643;
+}
+.footer{
+ position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(5, 5, 59);
+  text-align: center;
+}
+
+
+
+
+
+
+
